@@ -4,7 +4,7 @@
 
 **A. Project Overview**
 
-- This project aim to train model by train data to predict the Sale Price in test data for predicting future Sale Price
+- This project aims to build predictive models using the train dataset in order to estimate house sale prices in the test dataset.
 
 **B. Dataset Information**
 
@@ -23,7 +23,8 @@ _**Source**_
     - train.csv: LotFrontage (17.74%)
     - test.csv: LotFrontage (15.56%), MSZoning (0.27%), SaleType (0.07%)
   → Fill LotFrontage by mean value by Neighborhood. Fill MsZoning, SaleType by mode
-  + Zero value
+  + Zero value: LotFrontage, LotArea
+  → No Zero_value were found in these columns.
   + Outliers:
     - train.csv: EnclosedPorch (14.25%), BsmtFinSF2 (11.44%), OverallCond (8.56%); ScreenPorch (7.95%); MSSubClass (7.05%)...
     - test.csv: EnclosedPorch (17.20%), BsmtFinSF2 (12.34%), ScreenPorch (9.6%); OverallCond (8.7%); MSSubClass (7.13%)...
