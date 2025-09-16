@@ -1,7 +1,5 @@
 # P17_House-Prices-Analysis
 
-# P16_Retail-Transaction-Analysis
-
 **VERSION 1 - Predictive Analysis**
 
 **A. Project Overview**
