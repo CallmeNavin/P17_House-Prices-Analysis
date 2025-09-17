@@ -29,6 +29,15 @@ _**Source**_
     - train.csv: EnclosedPorch (14.25%), BsmtFinSF2 (11.44%), OverallCond (8.56%), ScreenPorch (7.95%), MSSubClass (7.05%)...
     - test.csv: EnclosedPorch (17.20%), BsmtFinSF2 (12.34%), ScreenPorch (9.6%), OverallCond (8.7%), MSSubClass (7.13%)...
   → No rows were dropped or transformed at this stage due to these features may represent real variations in housing data.
+- Build Model:
+  + Define x, y:
+    - y: SalePrice
+    - x: By correlation with other columns:
+      + Numeric columns
+      + Category columns:
+        - One-hot encoding with non-rank columns: 'MSZoning', 'Street', 'LotShape', 'LandContour', 'Utilities', 'LotConfig', 'LandSlope', 'BldgType', 'HouseStyle', 'RoofStyle', 'RoofMatl', 'MasVnrType', 'Foundation', 'Heating', 'CentralAir', 'Electrical', 'GarageType', 'GarageFinish', 'PavedDrive', 'MiscFeature', 'SaleCondition'
+        - Mapping with rank columns: 'ExterQual', 'ExterCond', 'BsmtQual', 'BsmtCond', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinType2', 'HeatingQC', 'KitchenQual', 'Functional', 'FireplaceQu', 'GarageQual', 'GarageCond', 'PoolQC', 'Fence'
+
 **D. Key Findings & Actionable Plans**
 
 _**Key Findings**_
